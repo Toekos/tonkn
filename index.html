@@ -63,15 +63,15 @@
       </div>
     </section>
 
-    <section id="manifesto" class="scroll-fade">
-      <h2>This is not just a token — it’s our opportunity</h2>
-      <p>
-        TONKN isn’t a quick-hit project or a pump-and-dump game. It was launched by one person, but its future belongs to everyone who believes in the meme movement.
-        No VCs, no big capital — we are the earliest and the only builders. Speculators may come and go, but real value stays with those who choose to build.
-      </p>
+    <!-- Disclaimer Section -->
+    <section id="disclaimer" class="scroll-fade">
+      <h2>Disclaimer</h2>
+      <p>TONKN has no financial value and offers no expectation of profit. It has no team allocation, no presale, no institutional support, and no assurance it will survive.</p>
+      <p>We simply hope that, in a world where everyone plays memes and speed‑runs pumps, at least one project takes itself seriously.</p>
+      <p>We want TONKN to live a little longer. Even if the token itself is worthless, please give it some respect.</p>
+      <blockquote><strong>“This token is worthless. But what we build with it might not be.”</strong></blockquote>
     </section>
-  
-    
+
     <section id="social" class="scroll-fade">
       <h2>Official Links</h2>
       <ul class="social-links">
@@ -80,23 +80,16 @@
         <li><strong>🐦 Twitter (X):</strong> <a href="https://x.com/Tonkn00?t=2qc08O3J5uhdN64-GsvBPg&s=09" target="_blank">@Tonkn00</a></li>
       </ul>
     </section>
-
-
   </main>
 
   <footer>
     © 2025 TONKN. All rights reserved.
   </footer>
-  <script>
-    const faders = document.querySelectorAll('.scroll-fade');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('appear');
-        }
-      });
-    }, { threshold: 0.3 });
-    faders.forEach(el => observer.observe(el));
-  </script>
+
+<script>
+const faders=document.querySelectorAll('.scroll-fade');
+const observer=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('appear');}})},{threshold:0.25});
+faders.forEach(el=>observer.observe(el));
+</script>
 </body>
 </html>
